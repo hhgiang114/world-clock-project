@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
+
+    <title>World Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
+      <!-- Select city drop down-->
+      <select id="city">
+        <option value="">Select a city...</option>
+        <!-- For local time zone-->
+        <option value="current">My current location</option>
+        <!-- City options-->
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Hanoi">Hanoi</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="berlin">
+          <div>
+            <h2>Berlin 🇩🇪</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="seoul">
+          <div>
+            <h2>Seoul 🇰🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="hanoi">
+          <div>
+            <h2>Hanoi 🇻🇳</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        This project is coded by Giang Hoang hosted on
+        <a href="https://github.com/hhgberry14/world-clock-project"> GitHub</a>
+        and website hosted
+        <a href="https://world-clock-project-ver1.netlify.app/">on Netlify</a>
+      </p>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
